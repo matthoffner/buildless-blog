@@ -1,16 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { lazy, Suspense, createElement } from 'react';
+import { render } from 'react-dom';
 import htm from 'htm';
 
-window.html = htm.bind(React.createElement);
+window.html = htm.bind(createElement);
 
 const Route = {
-  '*': React.lazy(() => import('./home.js'))
+  '*': lazy(() => import('./home.js'))
 }
 
-ReactDOM.render(
+render(
   html`
-    <${React.Suspense} fallback=${html`<div>loading...</div>`}>
+    <${Suspense} fallback=${html`<div>loading...</div>`}>
       <${Route[location.pathname] || Route['*']} />
     </>
   `,
