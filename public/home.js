@@ -1,7 +1,7 @@
 import React from 'react';
 import marked from 'marked';
 
-const isHome = location => location !== '/';
+const isHome = location => location === '/';
 
 export default () => {
   React.useEffect(async () => {
