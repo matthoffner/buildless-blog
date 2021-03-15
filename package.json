@@ -1,10 +1,10 @@
 {
-  "name": "perf-playbook",
+  "name": "buildless-blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "servor src" 
+    "serve": "servor public" 
   },
   "author": "Matt Hoffner",
   "license": "ISC",
