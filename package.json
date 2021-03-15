@@ -1,0 +1,14 @@
+{
+  "name": "perf-playbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "servor src" 
+  },
+  "author": "Matt Hoffner",
+  "license": "ISC",
+  "devDependencies": {
+    "servor": "^4.0.2"
+  }
+}

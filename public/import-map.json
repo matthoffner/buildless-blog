@@ -1,0 +1,8 @@
+{
+    "imports": {
+      "htm": "https://cdn.skypack.dev/htm",
+      "react": "https://cdn.skypack.dev/react",
+      "react-dom": "https://cdn.skypack.dev/react-dom",
+      "marked": "https://cdn.skypack.dev/marked"
+    }
+}
