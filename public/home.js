@@ -11,12 +11,12 @@ export default () => {
           return 'not found'
         }
         return res.text();
-      })
-        .then(content => document.getElementById('content').innerHTML = marked(content));
+      }).then(content => 
+        document.getElementById('content').innerHTML = marked(content));
     }
   }, []);
   
   return html`
-  <h1>buildless-blog</h1>
-  <div id="content"></div>`;
+    <h1>buildless-blog</h1>
+    <div id="content"></div>`;
 }

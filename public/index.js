@@ -5,7 +5,7 @@ import htm from 'htm';
 window.html = htm.bind(React.createElement);
 
 const Route = {
-  '*':React.lazy(() => import('./home.js'))
+  '*': React.lazy(() => import('./home.js'))
 }
 
 ReactDOM.render(
