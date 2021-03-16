@@ -8,3 +8,4 @@ Super simple react/markdown blog. No webpack or babel thanks to importmaps and h
 * [skypack](https://www.skypack.dev/view/react) - CDN for ES modules and custom React build
 * [htm](https://www.skypack.dev/view/htm) - Alternative to jsx that doesn't require transpiling
 * [marked](https://www.skypack.dev/view/marked) - Markdown library
+* [spa-github-pages](https://github.com/rafgraph/spa-github-pages) - Workaround script for SPA navigation with Github/Gitlab pages. 
