@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import marked from 'marked';
+import { marked } from 'marked';
 
 const isHome = location => location === '/';
 

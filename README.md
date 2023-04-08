@@ -1,6 +1,11 @@
 # buildless-blog
 
-Super simple react/markdown blog. No webpack or babel thanks to importmaps and htm. Just add markdown and go.
+"No npm install required" blog starter kit using Import Maps and buildless React. SPA nav support for Github pages included in 404.html
+
+
+```
+npx servor public --reload
+```
 
 ## Credits
 
