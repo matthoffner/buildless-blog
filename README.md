@@ -2,6 +2,8 @@
 
 "No npm install required" blog starter kit using Import Maps and buildless React. SPA nav support for Github pages included in 404.html
 
+[Github pages demo](https://matthoffner.github.io/buildless-blog/home)
+
 
 ```
 npx servor --reload
