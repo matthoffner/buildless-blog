@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { marked } from 'marked';
 
-const handleRoute = location => () => {
+const handleRoute = location => {
   if (location === '/') {
     return './home.md';
   } else if (location === '/buildless-blog/') {
