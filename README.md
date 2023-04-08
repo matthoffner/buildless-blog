@@ -4,7 +4,7 @@
 
 
 ```
-npx servor public --reload
+npx servor --reload
 ```
 
 ## Credits
