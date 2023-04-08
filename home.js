@@ -1,17 +1,17 @@
 import { useEffect } from 'react';
 import { marked } from 'marked';
 
-const handleHome = location => () => {
+const handleRoute = location => () => {
   if (location === '/') {
     return './home.md';
-  }
-  if (location === '/buildless-blog/') {
+  } else if (location === '/buildless-blog/') {
     return '/buildless-blog/home.md';
   };
+  return `.${location.pathname}.md`;
 }
 
 export default () => {
-  const contentFile = handleHome(location.pathname) || `.${location.pathname}.md`;
+  const contentFile = handleRoute(location.pathname);
   useEffect(() => 
     fetch(contentFile).then(res =>
         res.status !== 200 ? 'not found' : res.text()
