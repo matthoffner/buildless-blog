@@ -1,10 +1,41 @@
-# about
+# projects
 
-Super simple react/markdown blog. No webpack or babel thanks to importmaps and htm. Just add markdown and go.
+### scaipe
 
-## Credits
+### camelid-porch
 
-* [es-module-shims](https://www.npmjs.com/package/es-module-shims) - Polyfill for importmaps
-* [skypack](https://www.skypack.dev/view/react) - CDN for ES modules and custom React build
-* [htm](https://www.skypack.dev/view/htm) - Alternative to jsx that doesn't require transpiling
-* [marked](https://www.skypack.dev/view/marked) - Markdown library
+### scoranola
+
+### skymatt
+
+### buildless-blog
+
+### etcha
+
+### apolloskine
+
+### vision-camera-rectangle-scanner
+
+### vision-camera-custom-model
+
+### lighthouse-cloudfunction
+
+### walkoff
+
+### signifier
+
+### openresty-brotli
+
+### escode
+
+### es-react-pwa
+
+### snowpack-react-ssr
+
+### perfscore
+
+### jsondir2graphql
+
+### myrtc
+
+### async-server-component
