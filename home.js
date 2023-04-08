@@ -16,7 +16,7 @@ export default () => {
     fetch(contentFile).then(res =>
         res.status !== 200 ? 'not found' : res.text()
     ).then(content => 
-      document.getElementById('content').innerHTML = marked(content)), []);
+      document.getElementById('content').innerHTML = marked(content), { baseUrl: '/buildless-blog/' }), []);
   
   return html`
     <h1>buildless-blog</h1>
