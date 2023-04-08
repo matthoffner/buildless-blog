@@ -5,9 +5,11 @@ const handleRoute = location => {
   if (location === '/') {
     return './home.md';
   } else if (location === '/buildless-blog/') {
-    return '/buildless-blog/home.md';
-  };
-  return `.${location.pathname}.md`;
+    window.location.href = `${window.location.href}/home`;
+    return;
+  } else {
+    return `.${location.pathname}.md`;
+  }
 }
 
 export default () => {
