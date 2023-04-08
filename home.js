@@ -18,8 +18,23 @@ export default () => {
     fetch(contentFile).then(res =>
         res.status !== 200 ? 'not found' : res.text()
     ).then(content => 
-      document.getElementById('content').innerHTML = marked(content), { baseUrl: '/buildless-blog/' }), []);
+      document.getElementById('content').innerHTML = marked(content)), []);
   
   return html`
-    <div id="content"></div>`;
+    <div id="content"></div>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        html {
+          background: black;
+          color: white;
+        }
+      }
+      @media (prefers-color-scheme: light) {
+        html {
+          background: white;
+          color: black;
+        }
+      } 
+    </style>
+    `;
 }
