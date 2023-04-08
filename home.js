@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { marked } from 'marked';
 
-const isHome = location => location === '/';
+const isHome = location => location === '/' || location === '/buildless-blog/';
 
 export default () => {
   const contentFile = isHome(location.pathname) ? './home.md' : `.${location.pathname}.md`;
@@ -9,9 +9,7 @@ export default () => {
     fetch(contentFile).then(res =>
         res.status !== 200 ? 'not found' : res.text()
     ).then(content => 
-      document.getElementById('content').innerHTML = marked(content, {
-        gfm: false
-      })), []);
+      document.getElementById('content').innerHTML = marked(content)), []);
   
   return html`
     <h1>buildless-blog</h1>
