@@ -19,6 +19,5 @@ export default () => {
       document.getElementById('content').innerHTML = marked(content), { baseUrl: '/buildless-blog/' }), []);
   
   return html`
-    <h1>buildless-blog</h1>
     <div id="content"></div>`;
 }
