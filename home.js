@@ -8,7 +8,7 @@ const handleRoute = location => {
     window.location.href = `${window.location.href}/home`;
     return;
   } else {
-    return `.${location.pathname}.md`;
+    return `.${location}.md`;
   }
 }
 
